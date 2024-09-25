@@ -1,7 +1,7 @@
 package task3;
 
 public class Circle {
-	double PI = 3.14;
+	final double PI = 3.14;
 	double radius;
 	
 	void setRadius(double radius) {
