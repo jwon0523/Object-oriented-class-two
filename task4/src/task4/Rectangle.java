@@ -2,7 +2,7 @@ package task4;
 
 public class Rectangle {
 	private static final int MAX_POINT = 100;
-	private Point lt, rb;
+	private Point lt, rb; // 참조변수 선
 	
 	public Rectangle(int x1, int y1, int x2, int y2) {
 		if(x1 >= 0 && y1 >= 0 && x1 <= MAX_POINT && y1 <= MAX_POINT) {
@@ -22,6 +22,10 @@ public class Rectangle {
 		if(rb.getX() >= 0 && rb.getY() >= 0 && rb.getX() <= MAX_POINT && rb.getY() <= MAX_POINT) {
 			this.rb = rb;
 		}
+	}
+	
+	public Rectangle() {
+		this(0,0,0,0);
 	}
 	
 	int getWidth() {
