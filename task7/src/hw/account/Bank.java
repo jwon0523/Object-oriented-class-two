@@ -12,7 +12,7 @@ public class Bank {
 		ac[4] = new BonusPointAccount("5", "bonus", 20000);
 		
 		for(Account bank : ac) {
-			System.out.println("------------------\n");
+			System.out.println("------------------");
 			bank.check();
 			bank.deposit(5000);
 			if(bank instanceof CheckingAccount) {
